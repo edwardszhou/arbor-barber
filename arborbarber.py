@@ -20,6 +20,7 @@ tree = None
 seed = random.randint(0, 100)
 numFrames = 0
 
+# initial values of tree
 trunkLen = 2
 trunkWidth = 8
 minBranchingSize = 0.5 
@@ -34,7 +35,7 @@ windStrength = 0
 windVariation = 0
 windChaos = 0
 
-# Perlin noise function from p5py
+# Perlin noise function pasted from p5py
 
 PERLIN_OCTAVES = 4
 
@@ -140,15 +141,24 @@ def noise(x, y=0, z=0):
 
 # Rodriguez' rotation formula
 def rotateAround(vect, axis, angle):
-  
-  axis = axis/np.linalg.norm(axis)
-  termOne = vect * cos(angle)
-  termTwoPart = np.cross(axis,vect)
-  termTwo = termTwoPart * sin(angle)
-  termThreePartOne = np.dot(axis,vect)
-  termThreePartTwo = termThreePartOne * (1-cos(angle))
-  termThree = axis * termThreePartTwo
-  return termOne + termTwo + termThree
+    """Return rotation around a vector for a given axis and angle.
+    :param vect: vector to rotate around
+    :type vect: 
+    :param axis: axis to rotate
+    :type axis: 
+    :param angle: angle to rotate
+    :type angle: 
+    :returns: 
+    :rtype: 
+    """
+    axis = axis/np.linalg.norm(axis)
+    termOne = vect * cos(angle)
+    termTwoPart = np.cross(axis,vect)
+    termTwo = termTwoPart * sin(angle)
+    termThreePartOne = np.dot(axis,vect)
+    termThreePartTwo = termThreePartOne * (1-cos(angle))
+    termThree = axis * termThreePartTwo
+    return termOne + termTwo + termThree
 
 # from Arduino reference
 def remap(x, in_min, in_max, out_min, out_max):
