@@ -2,10 +2,10 @@
 
 Blender add-on for generating customizable stochastic fractal trees  
 
+<img width="1471" alt="example" src="https://github.com/edwardszhou/arbor-barber/assets/123663456/22e74a14-5713-4743-8d7f-928b0c0d6378">
+
 p5 prototype:  
 https://editor.p5js.org/EdwardZ/sketches/6-JZOqOki  
-
-<img width="1471" alt="example" src="https://github.com/edwardszhou/arbor-barber/assets/123663456/22e74a14-5713-4743-8d7f-928b0c0d6378">
 
 ---
 
