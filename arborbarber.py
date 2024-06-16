@@ -498,18 +498,6 @@ class PanelWind(bpy.types.Panel):
 
         row = layout.prop(treetool, "wind_strength")
     
-#bpy.context.scene.tree_adjust.trunk_len = trunkLen
-#bpy.context.scene.tree_adjust.trunk_width = trunkWidth
-#bpy.context.scene.tree_adjust.min_branching_size = minBranchingSize
-#bpy.context.scene.tree_adjust.max_branching_size = maxBranchingSize-minBranchingSize
-#bpy.context.scene.tree_adjust.min_num_branch = minNumBranch
-#bpy.context.scene.tree_adjust.max_num_branch = maxNumBranch-minNumBranch
-#bpy.context.scene.tree_adjust.min_split_angle = minSplitAngle
-#bpy.context.scene.tree_adjust.max_split_angle = maxSplitAngle-minSplitAngle
-#bpy.context.scene.tree_adjust.max_level = maxLevel
-
-#bpy.context.scene.tree_adjust.wind_strength = 0
-#bpy.context.scene.tree_adjust.has_leaves = True
 
 classes = [TreeProperties, AddTreeOperator, RandomizeSeedOperator, InitializeValuesOperator, MainPanel, PanelOptions, PanelVariations, PanelWind,]
 
